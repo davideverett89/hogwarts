@@ -1,4 +1,20 @@
+@import '../../../styles/colors';
+@import '../../../styles/variables';
+
 .student-card {
+    width: 18%;
+    margin: 1%;
+    background-color: $gold;
     color: white;
-    list-style-type: none;
+    box-shadow: $box-shadow;
+    .image-holder {
+        height: 250px;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+    h2 {
+        @include default-font(20px);
+    }
 }
